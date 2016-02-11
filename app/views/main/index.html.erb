@@ -40,6 +40,9 @@ p.mix {border-style: dotted dashed solid double;}
 
 <h3>Can you answer this open question?</h3>
 
+
+
+
 <%= form_for(@response) do |f| %>
   <% if @response.errors.any? %>
     <div id="error_explanation">
@@ -67,7 +70,7 @@ p.mix {border-style: dotted dashed solid double;}
     <%= f.hidden_field :article_id, :value => article.id %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "answer IT!"%>
   </div>
 <% end %>
 
