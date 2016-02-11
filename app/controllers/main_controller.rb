@@ -1,7 +1,8 @@
 class MainController < ApplicationController
   def index
-    
-    @articles = Article.all
+
+    @articles = Article.order ("updated_at desc")
+    @response = Response.new
 
   end
 end
